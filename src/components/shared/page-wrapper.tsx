@@ -1,5 +1,6 @@
+import { useToggle } from "@/provider/context-provider";
 import React from "react";
-import Navbar from "./navbar";
+import Navbar from "./navbar/navbar";
 
 type Props = {
   children: React.ReactNode;
