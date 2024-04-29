@@ -84,8 +84,8 @@ const Menubar = (props: Props) => {
     });
 
     return () => {
-      menuBar.kill();
-      tl.kill();
+      menuBar.revert();
+      tl.revert();
     };
   }, {});
 

@@ -1,14 +1,37 @@
-import PageWrapper from "@/components/shared/page-wrapper";
+"use client";
+
 import { Button } from "@/components/ui/button";
-import React from "react";
+import { useGSAP } from "@gsap/react";
+import gsap, { Expo } from "gsap";
+import React, { useRef } from "react";
 
 type Props = {};
 
 const page = (props: Props) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const coverRef = useRef<HTMLDivElement>(null);
+  useGSAP(
+    () => {
+      const coverPage = gsap.timeline({ paused: true });
+      if (coverRef.current) {
+        coverPage.to(coverRef.current.querySelectorAll("span"), {
+          y: 0,
+          stagger: 0.1,
+          opacity: 1,
+          duration: 0.7,
+          scrollTrigger: coverRef.current.querySelector("span"),
+        });
+      }
+
+      coverPage.play();
+    },
+    { scope: coverRef }
+  );
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative" ref={containerRef}>
       <div
         className="w-full h-full relative flex justify-center gap-y-4  flex-col px-8 text-white z-[2]"
+        ref={coverRef}
         style={{
           background: `url('/about.jpg') no-repeat center`,
           backgroundSize: "cover",
@@ -19,7 +42,7 @@ const page = (props: Props) => {
         {["Get", "Ready", "To", "Rock"].map((text, index) => (
           <span
             key={index}
-            className="text-gray-300  text-6xl font-bold font-ato uppercase"
+            className="text-gray-400 opacity-0 translate-y-[200px] py-2   text-6xl font-bold font-ato "
           >
             {text}
           </span>
