@@ -11,7 +11,7 @@ type Props = {
 };
 
 const PageWrapper = ({ children }: Props) => {
-  return <div className="pt-[100px] w-full">{children}</div>;
+  return <div className="w-full h-full">{children}</div>;
 };
 
 export default PageWrapper;

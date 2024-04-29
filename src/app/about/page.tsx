@@ -8,7 +8,7 @@ const page = (props: Props) => {
   return (
     <div className="w-full h-full relative">
       <div
-        className="w-full h-[calc(100vh-100px)] relative flex justify-center gap-y-4  flex-col px-8 text-white z-[2]"
+        className="w-full h-full relative flex justify-center gap-y-4  flex-col px-8 text-white z-[2]"
         style={{
           background: `url('/about.jpg') no-repeat center`,
           backgroundSize: "cover",

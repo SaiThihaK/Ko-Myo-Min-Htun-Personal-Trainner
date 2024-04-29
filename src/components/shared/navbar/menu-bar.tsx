@@ -79,6 +79,7 @@ const Menubar = (props: Props) => {
       tl.reversed(!tl.reversed());
     });
     mainMenuRef.current?.addEventListener("click", () => {
+      menuBar.reversed(!menuBar.reversed());
       tl.reversed(!tl.reversed());
     });
 
@@ -91,7 +92,7 @@ const Menubar = (props: Props) => {
   return (
     <>
       <div
-        className="fullPage fixed w-full left-0 top-0 h-screen z-[10] hidden"
+        className="fullPage fixed w-full left-0 top-0 h-screen z-[99] hidden"
         ref={fullPageRef}
       >
         <div
@@ -149,7 +150,7 @@ const Menubar = (props: Props) => {
         </div>
       </div>
       <button
-        className="block  bg-red-600 border-none cursor-pointer p-3 rounded-full z-[99]"
+        className="block  bg-red-600 border-none cursor-pointer p-3 rounded-full z-[999]"
         ref={menuToggleRef}
       >
         <svg

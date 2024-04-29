@@ -21,10 +21,10 @@ export default function RootLayout({
       <html lang="en">
         <body className={`${inter.className} container bg-black text-white`}>
           <div className="w-full relative">
-            <div className="absolute top-0 left-0 w-full z-[99] ">
+            <div className="fixed top-0 left-0 w-full z-[10] ">
               <Navbar />
             </div>
-            <div className="w-full min-h-screen pt-[100px] relative  bg-black">
+            <div className="w-full h-screen overflow-auto  relative  bg-black">
               {children}
             </div>
           </div>
