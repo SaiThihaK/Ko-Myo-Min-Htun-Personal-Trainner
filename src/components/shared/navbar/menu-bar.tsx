@@ -14,12 +14,13 @@ const Menubar = (props: Props) => {
   const fullMenuRef = useRef<HTMLDivElement>(null);
   const mainMenuRef = useRef<HTMLUListElement>(null);
   gsap.registerPlugin(useGSAP);
+
   useGSAP(() => {
+    const menuBar = gsap.timeline({ paused: true });
+    const tl = gsap.timeline();
     if (!menuToggleRef.current) {
       return;
     }
-
-    const menuBar = gsap.timeline({ paused: true });
 
     // Animating the first bar to rotate into a "/" shape
     menuBar.to(
@@ -53,7 +54,6 @@ const Menubar = (props: Props) => {
       },
       "start"
     );
-    const tl = gsap.timeline();
 
     tl.to(fullPageRef.current, { display: "block" }); // This uses gsap.set for immediate changes
 
@@ -78,12 +78,16 @@ const Menubar = (props: Props) => {
       menuBar.reversed(!menuBar.reversed());
       tl.reversed(!tl.reversed());
     });
+    mainMenuRef.current?.addEventListener("click", () => {
+      tl.reversed(!tl.reversed());
+    });
 
     return () => {
       menuBar.kill();
       tl.kill();
     };
   }, {});
+
   return (
     <>
       <div
@@ -108,7 +112,7 @@ const Menubar = (props: Props) => {
                 }}
               >
                 <Link
-                  href="/home"
+                  href="/"
                   className=" font-normal text-6xl inline-block uppercase leading-[1]"
                 >
                   Home
@@ -121,10 +125,10 @@ const Menubar = (props: Props) => {
                 }}
               >
                 <Link
-                  href="/model"
+                  href="/about"
                   className="font-normal text-6xl inline-block uppercase leading-[1]"
                 >
-                  Model
+                  About Us
                 </Link>
               </li>
               <li
@@ -145,7 +149,7 @@ const Menubar = (props: Props) => {
         </div>
       </div>
       <button
-        className="block md:hidden bg-red-600 border-none cursor-pointer p-3 rounded-full z-[99]"
+        className="block  bg-red-600 border-none cursor-pointer p-3 rounded-full z-[99]"
         ref={menuToggleRef}
       >
         <svg

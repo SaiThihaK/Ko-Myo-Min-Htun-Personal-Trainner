@@ -20,6 +20,7 @@ const config = {
     extend: {
       fontFamily: {
         work: "Work Sans",
+        ato: "Black Ops One",
       },
       colors: {
         border: "hsl(var(--border))",

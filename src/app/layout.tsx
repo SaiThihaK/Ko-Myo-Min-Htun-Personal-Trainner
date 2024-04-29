@@ -1,3 +1,4 @@
+import Navbar from "@/components/shared/navbar/navbar";
 import { ContextProvider } from "@/provider/context-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -18,9 +19,14 @@ export default function RootLayout({
   return (
     <ContextProvider>
       <html lang="en">
-        <body className={inter.className}>
-          <div className="bg-black text-white">
-            <div className="container min-h-screen w-full">{children}</div>
+        <body className={`${inter.className} container bg-black text-white`}>
+          <div className="w-full relative">
+            <div className="absolute top-0 left-0 w-full z-[99] ">
+              <Navbar />
+            </div>
+            <div className="w-full min-h-screen pt-[100px] relative  bg-black">
+              {children}
+            </div>
           </div>
         </body>
       </html>

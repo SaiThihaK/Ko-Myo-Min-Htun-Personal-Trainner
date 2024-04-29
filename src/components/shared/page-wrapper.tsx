@@ -11,12 +11,7 @@ type Props = {
 };
 
 const PageWrapper = ({ children }: Props) => {
-  return (
-    <div className="w-full px-4 relative">
-      <Navbar />
-      <div className="pt-[100px] w-full h-screen">{children}</div>
-    </div>
-  );
+  return <div className="pt-[100px] w-full">{children}</div>;
 };
 
 export default PageWrapper;
