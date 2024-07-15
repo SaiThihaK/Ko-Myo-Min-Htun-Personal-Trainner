@@ -24,7 +24,7 @@ const Contact = () => {
               >
                 <Header className="text-start flex w-full justify-between items-center text-white">
                   <div className="group-hover:text-primary">{el.name}</div>
-                  <ArrowDownRight className="w-12 h-12 group-hover:w-14 group-hover-14 group-hover:text-primary transition-all group-hover:translate-x-5 duration-500" />
+                  <ArrowDownRight className="w-12 h-12 group-hover:w-14 group-hover-h-14 group-hover:text-primary transition-all group-hover:translate-x-5 duration-500" />
                 </Header>
               </div>
             ))}
