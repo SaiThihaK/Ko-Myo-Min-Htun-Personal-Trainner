@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        hero: "url(/hero.jpeg)",
+      },
       fontFamily: {
         work: "Work Sans",
         ato: "Black Ops One",
@@ -26,8 +29,11 @@ const config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: "#000000",
+        foreground: "#fff",
+        base: {
+          default: "#000000",
+        },
         primary: {
           DEFAULT: "#dc2625",
           foreground: "hsl(var(--primary-foreground))",
