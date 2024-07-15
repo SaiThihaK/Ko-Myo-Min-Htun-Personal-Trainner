@@ -19,14 +19,12 @@ export default function RootLayout({
   return (
     <ContextProvider>
       <html lang="en">
-        <body className={`${inter.className} container bg-black text-white`}>
+        <body className={`${inter.className}`}>
           <div className="w-full relative">
             <div className="fixed top-0 left-0 w-full z-[10] ">
               <Navbar />
             </div>
-            <div className="w-full h-screen overflow-auto  relative  bg-black">
-              {children}
-            </div>
+            {children}
           </div>
         </body>
       </html>
