@@ -10,7 +10,7 @@ const Header: FC<Props> = ({ children, className }) => {
   return (
     <h2
       className={cn(
-        "w-full py-6 text-primary font-semibold  text-center text-3xl md:text-4xl",
+        "w-full py-6 text-primary font-semibold mb-6  text-center text-3xl md:text-4xl",
         className
       )}
     >
