@@ -1,10 +1,11 @@
+import Header from "@/components/shared/header";
+import Wrapper from "@/components/wrapper";
+
 const About = () => {
   return (
     <div className="bg-white text-black bg-fixed">
-      <div className="container py-6 gap-6  md:py-[4rem]">
-        <h2 className="w-full py-6 text-primary font-semibold  text-center text-3xl md:text-4xl">
-          STRENGTH COACHING
-        </h2>
+      <Wrapper>
+        <Header>Strength Coaching</Header>
         <div className="flex flex-col w-full gap-6 mt-6 h-full ">
           <div className="h-full gap-4 md:gap-[2rem] flex flex-col md:flex-row">
             <div>
@@ -31,7 +32,7 @@ const About = () => {
           <div className=" w-full md:w-[250px] aspect-square bg-primary"></div>
           <div className=" w-full md:w-[250px] aspect-square bg-primary"></div>
         </div>
-      </div>
+      </Wrapper>
     </div>
   );
 };
