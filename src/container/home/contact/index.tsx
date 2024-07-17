@@ -15,7 +15,7 @@ const Contact = () => {
       <Wrapper>
         <Header>Follow me on social media</Header>
         <div className="flex flex-col items-center md:flex-row gap-8">
-          <div className="w-[80%] rounded-xl md:basis-1/2 aspect-square mx-auto bg-contact bg-cover bg-no-repeat bg-center"></div>
+          <div className="w-[80%] rounded-xl md:basis-1/2 aspect-square mx-auto bg-contact bg-cover bg-no-repeat bg-top"></div>
           <div className="w-full md:basis-1/2">
             {socialMedia.map((el, index) => (
               <div

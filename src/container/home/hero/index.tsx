@@ -9,12 +9,13 @@ const Hero = () => {
         <div className="w-full h-screen  z-[4]">
           <div className="flex w-full h-full flex-col space-y-2 justify-center items-center gap-y-2">
             <div className="text-4xl w-full text-primary text-center  md:text-6xl font-black tracking-wide ">
-              Train With Professional
+              ပရော်ဖက်ရှင်နယ်နဲ့ အတူ လေ့ကျင့်ပါ
             </div>
             <div className="text-center flex flex-wrap w-full md:w-[700px] leading-7">
-              Hi, I’m Myo Min Htun, a professional trainer with 4 years of
-              experience in achieving amazing body transformations. Ready to
-              transform your body and reach your fitness goals?
+              မင်္ဂလာပါ၊ ကျွန်တော်က ၄ နှစ်ကြာ လုပ်ငန်းအတွေ့အကြုံရှိတဲ့
+              ပရော်ဖက်ရှင်နယ် ကစားသမား မျိုးမင်းထွန်း ဖြစ်ပါတယ်။ သင့်ရဲ့
+              ခန္ဓာကိုယ် ပြောင်းလဲမှုကို ရောက်အောင်၊ fitness ရည်မှန်းချက်တွေကို
+              ပြည့်မီအောင် လုပ်ချင်ပါသလား?
             </div>
             <div>
               <Button size="lg" variant="destructive" className="uppercase">
