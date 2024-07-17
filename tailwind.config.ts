@@ -20,9 +20,9 @@ const config = {
     extend: {
       backgroundImage: {
         hero: "url(/images/hero.jpeg)",
-        service1: "url(/images/service1.jpeg)",
-        service2: "url(/images/service2.jpeg)",
-        contact: "url(/images/contact.jpeg)",
+        service1: "url(/images/p1.jpg)",
+        service2: "url(/images/p2.jpg)",
+        contact: "url(/images/p9.jpg)",
       },
       fontFamily: {
         work: "Work Sans",
