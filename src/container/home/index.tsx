@@ -1,4 +1,5 @@
 import { FC } from "react";
+import BodyTransformation from "./body-transformation";
 import Contact from "./contact";
 import Faq from "./faq";
 import Hero from "./hero";
@@ -11,7 +12,9 @@ const HomeContainer: FC = () => {
       <Hero />
       <Intro />
       <Faq />
+      <BodyTransformation />
       <Service />
+
       <Contact />
     </>
   );

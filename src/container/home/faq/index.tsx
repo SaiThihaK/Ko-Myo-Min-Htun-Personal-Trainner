@@ -4,7 +4,7 @@ import FaqAccordion from "./faq-accordion";
 
 const Faq = () => {
   return (
-    <div>
+    <>
       <div className="container py-6">
         <Header>မေးခွန်းများ</Header>
         <div className="flex flex-col md:flex-row md:items-center gap-4">
@@ -31,7 +31,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

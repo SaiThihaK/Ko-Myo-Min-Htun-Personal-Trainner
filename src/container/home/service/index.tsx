@@ -7,8 +7,8 @@ const Service = () => {
       <div className="container py-6 gap-6   md:py-[4rem]">
         <Header>How Can I Help You</Header>
         <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
-          <div>
-            <div className="w-full md:w-[500px] group cursor-pointer rounded-2xl  bg-service1 bg-cover bg-no-repeat bg-center aspect-square relative">
+          <div className="basis-1/2 w-full">
+            <div className="w-full md:w-[500px] md:mx-auto group cursor-pointer rounded-2xl  bg-service1 bg-cover bg-no-repeat bg-center aspect-square relative">
               <div className="w-full h-full flex justify-start items-end px-2">
                 <Header className="text-white  flex-nowrap mb-8 group-hover:bg-primary transition-all duration-500 ease-in-out  bg-black text-center rounded-full">
                   <div className="w-full flex  group-hover:gap-x-4 transition-all duration-500 ease-in-out  gap-x-2 items-center justify-center">
@@ -20,7 +20,7 @@ const Service = () => {
             </div>
             <Header>100K MMK</Header>
           </div>
-          <div>
+          <div className="basis-1/2 w-full">
             <div className="w-full  mx-auto md:mx-0 md:w-[500px] group cursor-pointer rounded-2xl  bg-service2 bg-cover bg-no-repeat bg-center aspect-square relative">
               <div className="w-full h-full flex justify-start items-end px-2">
                 <Header className="text-white mb-8 group-hover:bg-primary transition-all duration-500 ease-in-out  bg-black text-center rounded-full">
