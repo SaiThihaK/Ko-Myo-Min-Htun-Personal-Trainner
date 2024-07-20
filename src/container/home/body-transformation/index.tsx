@@ -7,18 +7,22 @@ const BodyTransformation: FC = () => {
     <>
       <div className="container w-full py-6">
         <Header>Body Transformations</Header>
-        <div className="w-full h-full flex overflow-y-scroll no-scrollbar">
+        <div className="w-full h-full gap-x-4 flex overflow-y-scroll no-scrollbar">
           {[1, 2, 3, 4, 5, 6].map((_, index) => (
-            <div
-              key={index}
-              className="w-full md:w-[350px]  h-[300px] flex-shrink-0 relative"
-            >
-              <Image
-                src={"/images/p9.jpg"}
-                fill
-                className="object-contain"
-                alt="body transformation"
-              />
+            <div key={index} className="bg-slate-900 space-y-2">
+              <div className="w-full md:w-[600px] relative aspect-square flex   border-b-4 border-b-primary">
+                <Image
+                  src={"/images/p9.jpg"}
+                  fill
+                  className="object-contain"
+                  alt="body transformation"
+                />
+              </div>
+              <div className="w-full p-2">
+                <p>Aung Myo Min</p>
+                <p>3months</p>
+                <p>age:30s</p>
+              </div>
             </div>
           ))}
         </div>
