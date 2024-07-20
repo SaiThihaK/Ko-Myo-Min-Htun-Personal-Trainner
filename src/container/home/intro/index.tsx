@@ -17,8 +17,8 @@ const Intro = () => {
           သင့်ရဲ့ တိုးတက်မှုကို စစ်ဆေးပြီး အကောင်းဆုံးရလဒ်တွေကို ရယူနိုင်ဖို့
           အစဉ်အမြဲ လေ့ကျင့်ခန်းများကို ပြောင်းလဲပေးပါမည်။
         </p>
-        <div className="gap-6 flex flex-col md:flex-row justify-center items-center">
-          <div className="w-full md:w-[300px]  h-[300px] md:h-[500px] relative">
+        <div className="gap-6 flex flex-col flex-wrap md:flex-row justify-center items-center">
+          <div className="w-[300px] h-[500px] relative">
             <Image
               src="/images/p3.png"
               fill
@@ -26,7 +26,7 @@ const Intro = () => {
               alt="p3"
             />
           </div>
-          <div className="w-full md:mt-[200px] md:w-[300px] h-[300px] md:h-[500px] relative">
+          <div className="md:mt-[200px] w-[300px] h-[500px] relative">
             <Image
               src="/images/p4.png"
               fill
@@ -34,7 +34,7 @@ const Intro = () => {
               alt="p3"
             />
           </div>
-          <div className="w-full md:w-[300px] h-[300px] md:h-[500px] relative">
+          <div className=" w-[300px]  h-[500px] relative">
             <Image
               src="/images/p8.png"
               fill
