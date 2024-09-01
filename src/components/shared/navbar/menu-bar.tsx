@@ -2,7 +2,7 @@
 
 import gsap, { Power2 } from "gsap";
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
+import { useRef } from "react";
 import styles from "./styles.module.css";
 import { useGSAP } from "@gsap/react";
 
@@ -139,10 +139,10 @@ const Menubar = (props: Props) => {
                 }}
               >
                 <Link
-                  href="/best-sellers"
+                  href="#contact"
                   className="font-normal text-6xl inline-block uppercase leading-[1]"
                 >
-                  Best Sellers
+                  Contact
                 </Link>
               </li>
             </ul>

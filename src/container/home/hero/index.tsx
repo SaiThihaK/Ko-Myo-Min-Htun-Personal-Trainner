@@ -19,7 +19,7 @@ const Hero = () => {
             </div>
             <div>
               <Button size="lg" variant="destructive" className="uppercase">
-                Get Started Today
+                ဒီနေ့ပဲစတင်လိုက်ပါ
               </Button>
             </div>
           </div>

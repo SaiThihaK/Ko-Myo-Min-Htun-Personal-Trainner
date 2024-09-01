@@ -14,7 +14,7 @@ const Faq = () => {
                 src="/images/p5.png"
                 fill
                 alt="Myo Min Htun"
-                className="object-contain rounded-3xl"
+                className="object-contain rounded-lg"
               />
             </div>
             <div className="basis-1/2  h-[400px] w-full relative">
@@ -22,7 +22,7 @@ const Faq = () => {
                 src="/images/p7.png"
                 fill
                 alt="Myo Min Htun"
-                className="object-contain rounded-3xl"
+                className="object-contain rounded-lg"
               />
             </div>
           </div>

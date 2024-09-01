@@ -11,7 +11,7 @@ const socialMedia: { link: string; name: string }[] = [
 
 const Contact = () => {
   return (
-    <>
+    <div id="contact">
       <Wrapper>
         <Header>Follow me on social media</Header>
         <div className="flex flex-col items-center md:flex-row gap-8">
@@ -31,7 +31,7 @@ const Contact = () => {
           </div>
         </div>
       </Wrapper>
-    </>
+    </div>
   );
 };
 

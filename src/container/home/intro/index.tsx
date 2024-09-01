@@ -22,7 +22,7 @@ const Intro = () => {
             <Image
               src="/images/p3.png"
               fill
-              className="object-contain rounded-3xl"
+              className="object-fit rounded-lg"
               alt="p3"
             />
           </div>
@@ -30,7 +30,7 @@ const Intro = () => {
             <Image
               src="/images/p4.png"
               fill
-              className="object-contain rounded-3xl"
+              className="object-fit rounded-lg"
               alt="p3"
             />
           </div>
@@ -38,7 +38,7 @@ const Intro = () => {
             <Image
               src="/images/p8.png"
               fill
-              className="object-contain rounded-3xl"
+              className="object-fit rounded-lg"
               alt="p3"
             />
           </div>
